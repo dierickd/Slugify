@@ -8,7 +8,7 @@ Copier simplement le fichier [slugify](https://github.com/dierickd/Slugify/blob/
 ## Usage
 
 paramètre: _string_  
-sortie: _string_
+return: _string_
   
 *******************
   
