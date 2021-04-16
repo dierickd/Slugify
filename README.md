@@ -1,6 +1,7 @@
 ># Slugify
 
-Le service **Slugify** permet de convertir une chaine de caractère en slug, il est simple d'utilisation et rapide à mettre en place.
+Le service **Slugify** permet de convertir une chaine de caractère en slug, il est simple d'utilisation et rapide à mettre en place.  
+Vous pouvez choisir le séparateur de votre choix, 3 séparateurs sont disponibles `*`, `-`, `_` , par défaut le `-` sera insérer en cas de séparateur incorrect ou si aucune option est entrée.  
 
 ## Installation
 Copier simplement le fichier [slugify](https://github.com/dierickd/Slugify/blob/main/Slugify.php) dans un service  
@@ -8,7 +9,8 @@ Copier simplement le fichier [slugify](https://github.com/dierickd/Slugify/blob/
 ## Usage
 
 paramètre: _string_  
-return: _string_
+return: _string_  
+option: _separator_ => default: "-"
   
 *******************
   
@@ -58,9 +60,15 @@ $slugify->generate("La route d'où je viens")
 ```
 
 ```php
-$slugify->generate("Les 2 chats qui buvaient !")
+$slugify->generate("Les 2 chats qui buvaient !", "_")
 // Ouput
-// les-2-chats-qui-buvaient
+// les_2_chats_qui_buvaient
+```
+
+```php
+$slugify->generate("La guerre des étoiles", "*")
+// Ouput
+// la*guerre*des*etoiles
 ```
 
 
