@@ -56,7 +56,7 @@ $slugify->generate("Jérôme Larchet")
 ```php
 $slugify->generate("La route d'où je viens")
 // Ouput
-// la-route-dou-je-viens
+// la-route-d-ou-je-viens
 ```
 
 ```php
