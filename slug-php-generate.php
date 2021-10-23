@@ -1,15 +1,14 @@
 <?php
+declare(strict_types=1);
 
+namespace Ddi;
 
-namespace App\Services;
-
-
-class Slugify
+class slugPhpGenerate
 {
 
    public function generate(string $string, string $separator = "-"): string
    {
-      $separators = ["-", "_", "*"];
+      $separators = ["-", "_", "*", "~"];
 
       if (!in_array($separator, $separators, true)) {
          $separator = "-";
