@@ -4,7 +4,7 @@ Le service **Slugify** permet de convertir une chaine de caractère en slug, il 
 Vous pouvez choisir le séparateur de votre choix, 3 séparateurs sont disponibles `*`, `-`, `_` , par défaut le `-` sera insérer en cas de séparateur incorrect ou si aucune option est entrée.  
 
 ## Installation
-Copier simplement le fichier [slugify](https://github.com/dierickd/Slugify/blob/main/Slugify.php) dans un service  
+Copier simplement le fichier [slugify](https://github.com/dierickd/Slugify/blob/main/slug-php-generate.php) dans un service  
 
 ## Usage
 
